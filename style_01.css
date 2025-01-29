@@ -1,0 +1,161 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Navigation Bar */
+  /* Navigation Bar */
+.navber {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+  }
+  
+  .navber .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navber .logo a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .navber ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navber ul li {
+    display: inline;
+  }
+  
+  .navber ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+  
+  .navber ul li a:hover {
+    color: #f39c12;
+  }
+  
+  /* Hero Section */
+  #page_heading {
+    text-align: center;
+    padding: 50px 20px;
+    background: #444;
+    color: white;
+  }
+  
+  #page_heading img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+  /* Main Content */
+  section {
+    width: 80%;
+    margin: 30px auto;
+    text-align: justify;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  section h1 {
+    text-align: center;
+    color: #222;
+  }
+  
+  hr {
+    width: 50%;
+    margin: 10px auto;
+    border: 1px solid #f39c12;
+  }
+  
+  .p_list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .p_list li {
+    background-color: #f4f4f4; 
+    padding: 10px 20px; 
+    margin: 5px; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .p_list li:hover {
+    background-color: #ddd; 
+    cursor: pointer; 
+  }
+  
+  /* Footer */
+  #page_footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .Contacts ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .Contacts ul li a img {
+    width: 40px;
+    transition: transform 0.3s;
+  }
+  
+  .Contacts ul li a img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+    }
+    .navbar ul {
+      flex-direction: column;
+      text-align: center;
+    }
+    .navbar ul li {
+      margin: 10px 0;
+    }
+    #page_heading img {
+      width: 100px;
+    }
+    section {
+      width: 95%;
+    }
+  }
+  
